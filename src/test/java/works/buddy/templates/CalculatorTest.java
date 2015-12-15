@@ -68,4 +68,24 @@ public class CalculatorTest {
     public void testSubtractMinuses() throws Exception {
         assertEquals(0, calculator.subtract(-1, -1));
     }
+
+    @Test
+    public void testMultiply() throws Exception {
+        assertEquals(1, calculator.multiply(1, 1));
+    }
+
+    @Test
+    public void testMultiplyByZero() throws Exception {
+        assertEquals(0, calculator.multiply(1, 0));
+    }
+
+    @Test
+    public void testMultiplyByMinus() throws Exception {
+        assertEquals(-1, calculator.multiply(1, -1));
+    }
+
+    @Test
+    public void testMultiplyMinuses() throws Exception {
+        assertEquals(1, calculator.multiply(-1, -1));
+    }
 }
