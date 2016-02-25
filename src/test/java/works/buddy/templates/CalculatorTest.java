@@ -90,7 +90,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testMultiplyByMin() throws Exception {
-        assertTrue(1==1);
+    public void testDivide() throws Exception {
+        assertEquals(1, calculator.divide(1, 1));
     }
 }
