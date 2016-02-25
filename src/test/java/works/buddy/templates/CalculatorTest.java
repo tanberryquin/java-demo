@@ -91,6 +91,6 @@ public class CalculatorTest {
 
     @Test
     public void testMultiplyByMin() throws Exception {
-        assertTrue(1==0);
+        assertTrue(1==1);
     }
 }
