@@ -88,10 +88,9 @@ public class CalculatorTest {
     public void testMultiplyMinuses() throws Exception {
         assertEquals(1, calculator.multiply(-1, -1));
     }
-    
+
     @Test
-    public void testDivRealPass() throws Exception {
-       assertEquals("error in divInt()", 0.333333, calculator.divide(1, 3), 1e-6);
-       assertEquals("error in divInt()", 0.111111, calculator.divide(1, 9), 1e-6);
+    public void testDivByZero() throws Exception {
+       assertEquals("Cannot divide by zero", calculator.divide(1, 0));
    }
 }
