@@ -91,7 +91,7 @@ public class CalculatorTest {
     
     @Test
     public void testDivRealPass() {
-      assertEquals("error in divInt()", 0.333333, Calculator.divReal(1, 3), 1e-6);
-      assertEquals("error in divInt()", 0.111111, Calculator.divReal(1, 9), 1e-6);
+      assertEquals("error in divInt()", 0.333333, calculator.divReal(1, 3), 1e-6);
+      assertEquals("error in divInt()", 0.111111, calculator.divReal(1, 9), 1e-6);
    }
 }
