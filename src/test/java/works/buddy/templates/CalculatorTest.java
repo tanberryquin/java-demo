@@ -93,4 +93,9 @@ public class CalculatorTest {
     public void testDivide() throws Exception {
         assertEquals(1, calculator.divide(1, 1));
     }
+    
+    @Test
+    public void testZeroDividend() throws Exception {
+        assertEquals(0, calculator.divide(0, 1));
+    }    
 }
