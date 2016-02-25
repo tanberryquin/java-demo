@@ -90,7 +90,8 @@ public class CalculatorTest {
     }
     
     @Test
-    public void testAddFail() throws Exception {
-      assertNotEquals("error in add()", 0, calculator.sum(1, 2));
+    public void testDivRealPass() {
+      assertEquals("error in divInt()", 0.333333, Calculator.divReal(1, 3), 1e-6);
+      assertEquals("error in divInt()", 0.111111, Calculator.divReal(1, 9), 1e-6);
    }
 }
