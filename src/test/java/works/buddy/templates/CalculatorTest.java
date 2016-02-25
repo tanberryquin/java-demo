@@ -91,6 +91,10 @@ public class CalculatorTest {
 
     @Test
     public void testDivByZero() throws Exception {
-       assertEquals("Cannot divide by zero", calculator.divide(1, 0));
+        calculator.divide(1, 0);
+        assertTrue(false);
+    }
+    catch(Exception e) {
+        assertTrue(true);
    }
 }
