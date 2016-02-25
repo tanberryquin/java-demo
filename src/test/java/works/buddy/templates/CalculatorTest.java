@@ -91,6 +91,6 @@ public class CalculatorTest {
     
     @Test
     public void testAddFail() throws Exception {
-      assertNotEquals("error in add()", 0, Calculator.sum(1, 2));
+      assertNotEquals("error in add()", 0, calculator.sum(1, 2));
    }
 }
