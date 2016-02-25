@@ -88,4 +88,28 @@ public class CalculatorTest {
     public void testMultiplyMinuses() throws Exception {
         assertEquals(1, calculator.multiply(-1, -1));
     }
+
+    @Test
+    public void testDivide() throws Exception {
+        assertEquals(1, calculator.divide(1, 1));
+    }
+    
+    @Test
+    public void testZeroDividend() throws Exception {
+        assertEquals(0, calculator.divide(0, 1));
+    }
+    
+    @Test
+    public void testDivideNegDividend() throws Exception {
+        assertEquals(-1, calculator.divide(-1, 1));
+    }        
+    
+    @Test
+    public void testDivideNegDivisor() throws Exception {
+        assertEquals(-1, calculator.divide(1, -1));
+    }
+    @Test
+    public void testDividetwoNeg() throws Exception {
+        assertEquals(1, calculator.divide(-1, -1));
+    }
 }
