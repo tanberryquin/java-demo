@@ -104,4 +104,9 @@ public class CalculatorTest {
         assertEquals(-1, calculator.divide(-1, 1));
     }        
     
+    @Test
+    public void testDivideNegDivisor() throws Exception {
+        assertEquals(-1, calculator.divide(1, -1));
+    }     
+    
 }
