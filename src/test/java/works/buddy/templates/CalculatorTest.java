@@ -90,7 +90,7 @@ public class CalculatorTest {
     }
     
     @Test
-    public void testAddFail() {
-      assertNotEquals("error in add()", 0, Calculator.add(1, 2));
+    public void testAddFail() throws Exception {
+      assertNotEquals("error in add()", 0, Calculator.sum(1, 2));
    }
 }
