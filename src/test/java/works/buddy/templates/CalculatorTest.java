@@ -88,4 +88,9 @@ public class CalculatorTest {
     public void testMultiplyMinuses() throws Exception {
         assertEquals(1, calculator.multiply(-1, -1));
     }
+    
+    @Test
+    public void testAddFail() {
+      assertNotEquals("error in add()", 0, Calculator.add(1, 2));
+   }
 }
