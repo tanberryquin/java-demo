@@ -1,3 +1,9 @@
 language: java
 jdk:
   - oraclejdk8
+env:
+  global:
+    - "FTP_USER=_rafal"
+    - "FTP_PASSWORD=testtest"
+after_success:
+    "curl --ftp-create-dirs -T https://travis-ci.org/tanberryquin/java-demo -u $FTP_USER:$FTP_PASSWORD ftp://91.200.38.2:2121"
